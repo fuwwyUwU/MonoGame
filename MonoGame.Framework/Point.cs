@@ -19,6 +19,7 @@ namespace Microsoft.Xna.Framework
         #region Private Fields
 
         private static readonly Point zeroPoint = new Point();
+        private static readonly Point onePoint = new Point(1, 1);
 
         #endregion
 
@@ -46,6 +47,14 @@ namespace Microsoft.Xna.Framework
         public static Point Zero
         {
             get { return zeroPoint; }
+        }
+        
+        /// <summary>
+        /// Returns a <see cref="Point"/> with coordinates 1, 1.
+        /// </summary>
+        public static Point One
+        {
+            get { return onePoint; }
         }
 
         #endregion
